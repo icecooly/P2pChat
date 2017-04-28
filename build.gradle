@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+version '1.0'
+
+sourceSets {  
+     main {
+        java {
+            srcDir 'src'
+        }
+    } 
+}  
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+	flatDir {
+            dirs "$rootProject.projectDir/libs"
+        }
+    jcenter()
+    mavenCentral()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+	compile fileTree(dir: 'lib', include: ['*.jar'])
+	compile group: 'com.alibaba', name: 'fastjson', version: '1.2.31'
+    compile 'org.slf4j:slf4j-api:1.7.21'
+	compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.21'
+}
+
+jar {
+	manifest {
+        attributes 'Main-Class': rootProject.name
+    }
+    doFirst {
+        from {
+    		configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    	}
+    	exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+    	exclude('**/*sl4j-*.jar')
+    }
+}
