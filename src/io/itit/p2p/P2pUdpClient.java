@@ -34,13 +34,16 @@ public class P2pUdpClient {
 					try {
 						client.receive(receievePacket);
 						onReceieveMessage(receievePacket);
-						Thread.sleep(10000);//sleep
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
 				}
 			}
 		}).start();
+		//
+		if(logger.isInfoEnabled()){
+			logger.info("Client Start");
+		}
 	}
 	
 	protected void onReceieveMessage(DatagramPacket packet) throws Exception {
@@ -75,6 +78,7 @@ public class P2pUdpClient {
 		}else if(message.cmd.equals(Message.CMD_P2PCHAT)){//P2P CHAT
 			byte[] data=JsonUtil.toJson(message).getBytes();
 			DatagramPacket rsp=new DatagramPacket(data,data.length,packet.getAddress(),packet.getPort());
+			Thread.sleep(5000);//sleep 5s
 			client.send(rsp);
 		}
 	}
@@ -101,7 +105,6 @@ public class P2pUdpClient {
 		P2pUdpClient client=new P2pUdpClient();
 		client.start();
 		client.login();
-		Thread.sleep(5000);
 		client.list();
 	}
 }
