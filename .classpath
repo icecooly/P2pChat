@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry path="bin" kind="output"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry sourcepath="/Users/skydu/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.31/36730d81d068a72e89b1009df8a512235e3b0b77/fastjson-1.2.31-sources.jar" kind="lib" path="/Users/skydu/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.2.31/1ca964122c53f03f6fc3938b58c16d63b40490ab/fastjson-1.2.31.jar"/>
+	<classpathentry sourcepath="/Users/skydu/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/f285ac123f201fb4b028bac556928d7cf527ef48/slf4j-api-1.7.21-sources.jar" kind="lib" path="/Users/skydu/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar"/>
+	<classpathentry sourcepath="/Users/skydu/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.21/58eb8609a8f14e5bbf4d260ce5f364724079227/slf4j-simple-1.7.21-sources.jar" kind="lib" path="/Users/skydu/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.21/be4b3c560a37e69b6c58278116740db28832232c/slf4j-simple-1.7.21.jar"/>
+</classpath>
