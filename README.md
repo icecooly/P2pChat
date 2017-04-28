@@ -27,7 +27,7 @@ Usage
 4.客户端2收到P2PCHAT包后，就可以关闭服务端,两个客户端每隔5秒进行通信
 
 	[Thread-0] INFO io.itit.p2p.P2pUdpClient - onReceieveMessage data:{"cmd":"P2PCHAT","requestId":3} from /127.0.0.1:57561
-	[Thread-0] INFO io.itit.p2p.P2pUdpClient - onReceieveMessage data:	{"cmd":"P2PCHAT","requestId":3} from /127.0.0.1:57561
+	[Thread-0] INFO io.itit.p2p.P2pUdpClient - onReceieveMessage data:{"cmd":"P2PCHAT","requestId":3} from /127.0.0.1:57561
 	[Thread-0] INFO io.itit.p2p.P2pUdpClient - onReceieveMessage data:{"cmd":"P2PCHAT","requestId":3} from /127.0.0.1:57561
 	[Thread-0] INFO io.itit.p2p.P2pUdpClient - onReceieveMessage data:{"cmd":"P2PCHAT","requestId":3} from /127.0.0.1:57561
 	[Thread-0] INFO io.itit.p2p.P2pUdpClient - onReceieveMessage data:{"cmd":"P2PCHAT","requestId":3} from /127.0.0.1:57561
